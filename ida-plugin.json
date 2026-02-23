@@ -1,0 +1,30 @@
+{
+    "IDAMetadataDescriptorVersion": 1,
+    "plugin": {
+        "name": "bitopt",
+        "entryPoint": "plugins/bitopt_plugin.py",
+        "version": "1.0.0",
+        "urls": {
+            "repository": "https://github.com/teflate/bitopt"
+        },
+        "authors": [
+            {
+                "name": "teflate",
+                "email": "teflate@icloud.com"
+            }
+        ],
+        "description": "Optimization passes for ROL, ROR and byteswap intrinsics",
+        "license": "MIT",
+        "idaVersions": ">=7.7",
+        "categories": [
+            "decompilation",
+            "deobfuscation"
+        ],
+        "keywords": [
+            "ROL",
+            "ROR",
+            "byteswap",
+            "optimization"
+        ]
+    }
+}
