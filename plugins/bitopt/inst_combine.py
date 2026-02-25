@@ -57,9 +57,14 @@ def _combine_rot(outer: ida_hexrays.minsn_t, op: ida_hexrays.mop_t) -> int:
                 So %= N
 
                 new_op = ida_hexrays.mop_t(inner_args[0])
-                outer_args[0].erase()
-                outer_args[0].swap(new_op)
-                outer_args[1].make_number(So, outer_args[1].size)
+                if So == 0:
+                    op.erase()
+                    op.swap(new_op)
+                else:
+                    outer_args[0].erase()
+                    outer_args[0].swap(new_op)
+                    outer_args[1].make_number(So, outer_args[1].size)
+
                 return 1
 
     # rotrN(x, N) -> x
