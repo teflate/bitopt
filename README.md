@@ -7,7 +7,13 @@ for ROL, ROR and byteswap intrinsics.
 
 IDA 9.0 and newer versions:
 
-- Clone this repository to your IDA plugins directory
+- Install using `hcli` by running:
+
+    ```sh
+    hcli plugin install bitopt
+    ```
+
+- Or clone this repository to your IDA plugins directory
 
 Older versions of IDA:
 
