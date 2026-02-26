@@ -3,7 +3,7 @@
     "plugin": {
         "name": "bitopt",
         "entryPoint": "plugins/bitopt_plugin.py",
-        "version": "1.0.0",
+        "version": "1.0.1",
         "urls": {
             "repository": "https://github.com/teflate/bitopt"
         },
